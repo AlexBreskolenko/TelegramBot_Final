@@ -41,7 +41,7 @@ namespace SkillFactory_TelegramBot
             services.AddTransient<InlineKeyboardController>();
 
             // Регистрируем объект TelegramBotClient c токеном подключения
-            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("6129188867:AAHXAHYyP8ddhBqu4ivwHVlWiyPfuSFs_TU"));
+            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("5729694398:AAEFmS9E5yblAbAxct5Z4HLf--RMB7m7neU"));
             // Регистрируем постоянно активный сервис бота
             services.AddHostedService<Bot>();
             services.AddSingleton<IStorage, MemoryStorage>();
@@ -51,7 +51,7 @@ namespace SkillFactory_TelegramBot
         {
             return new AppSettings()
             {
-                BotToken = "6129188867:AAHXAHYyP8ddhBqu4ivwHVlWiyPfuSFs_TU"
+                BotToken = "5729694398:AAEFmS9E5yblAbAxct5Z4HLf--RMB7m7neU"
             };
         }
     }
